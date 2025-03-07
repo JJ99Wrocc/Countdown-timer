@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(233,233,233);
+}
+.counter-app{
+    position: relative;
+}
+.app-body{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+.image-section{
+    position: relative;
+    height: 200px;
+    background-image: url('../default.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.settings-btn{
+    position: absolute;
+    top: 20px;
+    right:  20px;
+    padding: 10px 15px;
+    font-size: 26px;
+    background-color: #f9f9f9;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s, color, .3s;
+}
+.settings-btn:hover{
+    color: #f9f9f9;
+    background-color: #333;
+}
+.time-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    background-color: #fff;
+    z-index: 100;
+}
+h3{
+    font-size: 22px;
+    text-align: center;
+}
+.time-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 18%;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0 20px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+
+
+}
+.number{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20;
+}
+.card-title{
+    text-align: center;
+}
+.settings{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    padding: 25px 15px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateX(0);
+    transition: transform .5s, opacity .3;
+}
+.active{
+  transform: translateX(430px);
+    opacity: 1;
+}
+h1{
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+label{
+    margin-bottom: 10px;
+}
+input{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.date{
+    text-align: center;
+}
+.save{
+    padding: 5px 10px;
+    cursor: pointer;
+}
